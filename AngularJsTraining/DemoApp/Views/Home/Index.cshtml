@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "AngularJS Training";
+}
+<div ng-app="Demo" class="" style="margin-top:30px;">
+    <div ng-controller="demoController">
+        
+    </div>
+    <hr />
+    <div ng-controller="studentListController">
+        <ul>
+            <li ng-repeat="student in students">
+                {{$index + 1}} - <a href="student/view/{{student.id}}">{{student.name}}</a>
+            </li>
+        </ul>
+        <br />
+        <button ng-click="addStudent()">Add New Student</button>
+    </div>
+    <hr />
+    <div style="margin-top:30px;">
+        <form ng-controller="startupFundingController" ng-submit="requestFunding()">
+            Starting :  
+            <br />
+            <input type="text" ng-change="computeNeeded()" ng-model="startingEstimate" />
+            <br /><br />
+            Recommendation: {{needed}}
+            <br /><br />
+            <button>Fund my startup!</button>
+            <br /><br />
+            <button ng-click="reset()">Reset</button>
+        </form>
+    </div>
+    <hr />
+    <div ng-controller="shoppingCartController">
+        <h3>Shopping Cart</h3>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tr ng-repeat="item in items">
+                <td>{{item.title}}</td>
+                <td><input class="" style="max-width:50px;" type="text" ng-model="item.quantity" value="item.quantity" /></td>
+                <td>{{item.price | currency}}</td>
+                <td>
+                    {{item.price * item.quantity | currency}}
+                </td>
+                <td>
+                    <button class="btn btn-danger" ng-click="remove($index)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><strong> {{ totalPrice() | currency}} </strong></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    
+</div>
