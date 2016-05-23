@@ -1,2 +1,2 @@
 # AngularJsTrainig
-Bu proje AngularJS örnekleri içermektedir.
+This project includes of AngularJS examples.
