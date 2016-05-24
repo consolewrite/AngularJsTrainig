@@ -1,0 +1,33 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <strong>Sender : </strong>
+    </div>
+    <div class="col-md-12">
+        {{message.sender}}
+    </div>
+
+    <div class="col-md-12">
+        <strong>To : </strong>
+    </div>
+    <div class="col-md-12">
+        <span ng-repeat="recipient in message.recipients">
+            {{recipient}}
+        </span>
+    </div>
+
+    <div class="col-md-12">
+        <strong>Subject : </strong>
+    </div>
+    <div class="col-md-12">
+        {{message.subject}}
+    </div>
+
+    <div class="col-md-12">
+        <strong>Message : </strong>
+    </div>
+    <div class="col-md-12">
+        {{message.message}}
+    </div>
+    <br /><br />
+    <a href="#/">Back to message list</a>
+</div>

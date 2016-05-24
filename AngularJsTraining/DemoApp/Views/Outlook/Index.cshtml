@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Outlook Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="mailModule">
+    <h2>Welcome to your outlook !</h2>
+    <br />
+    <ul>
+        <li><a href="#/list">Inbox</a></li>
+        <li><a href="#/detail/1">Detail Sample</a></li>
+    </ul>
+    <div ng-view=""></div>
+</div>
+
+

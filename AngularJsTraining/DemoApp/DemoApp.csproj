@@ -110,12 +110,14 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Directives\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OutlookController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,11 +131,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\Controllers\DemoController.js" />
-    <Content Include="Scripts\Controllers\ShoppingCartController.js" />
-    <Content Include="Scripts\Controllers\StartupFundingController.js" />
-    <Content Include="Scripts\Controllers\StudentListController.js" />
-    <Content Include="Scripts\Modules\Demo.js" />
+    <Content Include="Scripts\Controllers\DemoModule\DemoController.js" />
+    <Content Include="Scripts\Controllers\MailModule\MailController.js" />
+    <Content Include="Scripts\Controllers\DemoModule\ShoppingCartController.js" />
+    <Content Include="Scripts\Controllers\DemoModule\StartupFundingController.js" />
+    <Content Include="Scripts\Controllers\DemoModule\StudentListController.js" />
+    <Content Include="Scripts\Filters\TitleCaseFilter.js" />
+    <Content Include="Scripts\Modules\MailModule.js" />
+    <Content Include="Scripts\Modules\DemoModule.js" />
+    <Content Include="Scripts\Services\ProductListService.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -148,12 +154,20 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Outlook\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\List.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\Detail.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

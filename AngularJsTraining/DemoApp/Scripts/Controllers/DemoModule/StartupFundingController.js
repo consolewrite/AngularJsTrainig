@@ -1,4 +1,4 @@
-﻿var startupFundingController = demo.controller('startupFundingController', function ($scope) {
+﻿var startupFundingController = demoModule.controller('startupFundingController', function ($scope) {
     $scope.computeNeeded = function () {
         $scope.needed = $scope.startingEstimate * 10;
     };

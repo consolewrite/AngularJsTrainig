@@ -47,6 +47,6 @@ C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\
 C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\bin\Newtonsoft.Json.xml
 C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\bin\Antlr3.Runtime.pdb
-C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\obj\Debug\DemoApp.csprojResolveAssemblyReference.cache
 C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\obj\Debug\DemoApp.dll
 C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\obj\Debug\DemoApp.pdb
+C:\Users\emre.kiyak\Documents\GitHub\AngularJsTrainig\AngularJsTraining\DemoApp\obj\Debug\DemoApp.csprojResolveAssemblyReference.cache

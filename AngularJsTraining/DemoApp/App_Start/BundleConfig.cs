@@ -10,14 +10,37 @@ namespace DemoApp
         {
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
             //            "~/Scripts/jquery-{version}.js"));
+
+            //AngularJS
             bundles.Add(new ScriptBundle("~/bundles/angularjs").Include(
                         "~/Scripts/angular.min.js",
-                        "~/Scripts/angular-route.min.js", 
-                        "~/Scripts/Modules/Demo.js",
-                        "~/Scripts/Controllers/DemoController.js",
-                        "~/Scripts/Controllers/ShoppingCartController.js",
-                        "~/Scripts/Controllers/StartupFundingController.js",
-                        "~/Scripts/Controllers/StudentListController.js"));
+                        "~/Scripts/angular-route.min.js"));
+
+            //AngularJS Modules
+            bundles.Add(new ScriptBundle("~/bundles/modules").Include(
+                        "~/Scripts/Modules/DemoModule.js",
+                        "~/Scripts/Modules/MailModule.js"));
+
+            //AngularJS Filters
+            bundles.Add(new ScriptBundle("~/bundles/filters").Include(
+                        "~/Scripts/Filters/TitleCaseFilter.js"));
+
+
+            //AngularJS Services
+            bundles.Add(new ScriptBundle("~/bundles/services").Include(
+                        "~/Scripts/Services/ProductListService.js"));
+
+            //AngularJS Demo Module Controllers
+            bundles.Add(new ScriptBundle("~/bundles/demoModulecontrollers").Include(
+                        "~/Scripts/Controllers/DemoModule/DemoController.js",
+                        "~/Scripts/Controllers/DemoModule/ShoppingCartController.js",
+                        "~/Scripts/Controllers/DemoModule/StartupFundingController.js",
+                        "~/Scripts/Controllers/DemoModule/StudentListController.js"));
+
+            //AngularJS Mail Module Controllers
+            bundles.Add(new ScriptBundle("~/bundles/mailModuleControllers").Include(
+                        "~/Scripts/Controllers/MailModule/MailController.js"));
+
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

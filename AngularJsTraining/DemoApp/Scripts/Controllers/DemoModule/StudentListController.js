@@ -1,4 +1,4 @@
-﻿var studentListController = demo.controller('studentListController', function ($scope) {
+﻿var studentListController = demoModule.controller('studentListController', function ($scope) {
     var students = [
         {id:1, name:"Emre"},
         { id: 1, name: "Esra" },
