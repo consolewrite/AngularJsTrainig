@@ -109,18 +109,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Scripts\Directives\" />
+    <Folder Include="Views\Data\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OutlookController.cs" />
+    <Compile Include="Controllers\SpaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MailItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,14 +134,22 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\Controllers\DemoModule\DemoController.js" />
-    <Content Include="Scripts\Controllers\MailModule\MailController.js" />
     <Content Include="Scripts\Controllers\DemoModule\ShoppingCartController.js" />
     <Content Include="Scripts\Controllers\DemoModule\StartupFundingController.js" />
     <Content Include="Scripts\Controllers\DemoModule\StudentListController.js" />
+    <Content Include="Scripts\Controllers\MailModule\MailDetailController.js" />
+    <Content Include="Scripts\Controllers\MailModule\MailListController.js" />
+    <Content Include="Scripts\Controllers\SpaModule\ShowOrderController.js" />
+    <Content Include="Scripts\Controllers\SpaModule\AddOrderController.js" />
+    <Content Include="Scripts\Directives\focusDirective.js" />
     <Content Include="Scripts\Filters\TitleCaseFilter.js" />
     <Content Include="Scripts\Modules\MailModule.js" />
     <Content Include="Scripts\Modules\DemoModule.js" />
+    <Content Include="Scripts\Modules\SpaModule.js" />
+    <Content Include="Scripts\Services\MailListService.js" />
     <Content Include="Scripts\Services\ProductListService.js" />
+    <Content Include="Templates\add_order.html" />
+    <Content Include="Templates\show_orders.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -168,6 +178,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Templates\Detail.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Spa\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

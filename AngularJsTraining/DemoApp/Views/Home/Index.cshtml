@@ -2,11 +2,21 @@
     ViewBag.Title = "AngularJS Training";
 }
 <div ng-app="demoModule" class="" style="margin-top:30px;">
-    <div ng-controller="demoController">
-        <h1>{{schoolName | titleCaseFilter}}</h1>    
+    <div>
+
     </div>
     <hr />
-    
+    <div ng-controller="demoController">
+        <button ng-click="clickUnfocused()">
+            Not focused
+        </button>
+        <button ngbk-focus ng-click="clickFocused()">
+            I'm very focused!
+        </button>
+        <div>{{message.text}}</div>
+        <hr />
+        <h1>{{schoolName | titleCaseFilter}}</h1>    
+    </div>
     <hr />
     <div ng-controller="studentListController">
         <ul>

@@ -19,7 +19,8 @@ namespace DemoApp
             //AngularJS Modules
             bundles.Add(new ScriptBundle("~/bundles/modules").Include(
                         "~/Scripts/Modules/DemoModule.js",
-                        "~/Scripts/Modules/MailModule.js"));
+                        "~/Scripts/Modules/MailModule.js",
+                        "~/Scripts/Modules/SpaModule.js"));
 
             //AngularJS Filters
             bundles.Add(new ScriptBundle("~/bundles/filters").Include(
@@ -28,10 +29,15 @@ namespace DemoApp
 
             //AngularJS Services
             bundles.Add(new ScriptBundle("~/bundles/services").Include(
-                        "~/Scripts/Services/ProductListService.js"));
+                        "~/Scripts/Services/ProductListService.js",
+                        "~/Scripts/Services/MailListService.js"));
+
+            //AngularJS Directives
+            bundles.Add(new ScriptBundle("~/bundles/directives").Include(
+                        "~/Scripts/Directives/focusDirective.js"));
 
             //AngularJS Demo Module Controllers
-            bundles.Add(new ScriptBundle("~/bundles/demoModulecontrollers").Include(
+            bundles.Add(new ScriptBundle("~/bundles/demoModuleControllers").Include(
                         "~/Scripts/Controllers/DemoModule/DemoController.js",
                         "~/Scripts/Controllers/DemoModule/ShoppingCartController.js",
                         "~/Scripts/Controllers/DemoModule/StartupFundingController.js",
@@ -39,7 +45,13 @@ namespace DemoApp
 
             //AngularJS Mail Module Controllers
             bundles.Add(new ScriptBundle("~/bundles/mailModuleControllers").Include(
-                        "~/Scripts/Controllers/MailModule/MailController.js"));
+                        "~/Scripts/Controllers/MailModule/MailListController.js",
+                        "~/Scripts/Controllers/MailModule/MailDetailController.js"));
+
+            //AngularJS SPA Module Controllers
+            bundles.Add(new ScriptBundle("~/bundles/spaModuleControllers").Include(
+                        "~/Scripts/Controllers/SpaModule/AddOrderController.js",
+                        "~/Scripts/Controllers/SpaModule/ShowOrderController.js"));
 
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
